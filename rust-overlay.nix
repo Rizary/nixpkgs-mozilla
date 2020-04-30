@@ -29,7 +29,7 @@ let
   # See https://github.com/rust-lang-nursery/rustup.rs/blob/master/src/dist/src/dist.rs
   defaultDistRoot = "https://static.rust-lang.org";
   manifest_v1_url = {
-    dist_root ? defaultDistRoot + "/dist",
+    dist_root ? defaultDistRoot,
     date ? null,
     staging ? false,
     # A channel can be "nightly", "beta", "stable", or "\d{1}\.\d{1,3}\.\d{1,2}".
